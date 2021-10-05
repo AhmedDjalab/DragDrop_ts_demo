@@ -18,6 +18,14 @@ module.exports = {
       },
     ],
   },
+
+  devServer: {
+    //....//
+    static: {                               
+      directory: path.join(__dirname, './'),  
+      watch: true
+    }
+ },
   resolve: {
     extensions: [".ts", ".js"],
   },
